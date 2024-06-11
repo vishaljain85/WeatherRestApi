@@ -15,7 +15,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
 open-weather-map:
-  api-key: 20e06bafe38902f4fc49d8f9db1f5fac
+  api-key: <<API KEY>>
 logging:
   level:
     org.springframework.security.web: INFO
