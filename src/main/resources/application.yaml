@@ -1,0 +1,21 @@
+server:
+  port: ${SERVER_PORT:8085}
+spring:
+  datasource:
+    url: jdbc:h2:mem:weather
+    username: vg
+    password: vgDemo
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+open-weather-map:
+  api-key: 20e06bafe38902f4fc49d8f9db1f5fac
+logging:
+  level:
+    org.springframework.security.web: INFO
